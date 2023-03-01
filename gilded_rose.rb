@@ -15,7 +15,7 @@ class GildedRose
   private
 
   def sulfuras_item?(item)
-    item.instance_of? Sulfuras
+    item.class.name.eql? 'Sulfuras'
   end
 
   def proxy_item(item)
